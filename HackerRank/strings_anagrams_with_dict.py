@@ -1,4 +1,22 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'makeAnagram' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. STRING a
+#  2. STRING b
+#
+
 def makeAnagram(a, b):
+    # Write your code here
     # Create dictionaries to count the frequency of each character in both strings
     char_count_a = {}
     char_count_b = {}
@@ -32,13 +50,11 @@ def makeAnagram(a, b):
     return removal_count
 
 if __name__ == '__main__':
+    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
     a = input()
     b = input()
     res = makeAnagram(a, b)
+    # fptr.write(str(res) + '\n')
+    # fptr.close()
     print(res)
-
-# It seems like you want to modify the given code to calculate the number of characters that need to be removed from two strings to make them anagrams. 
-# The code has a few issues. # Here's a corrected version of your code:
-
-# This code counts the frequency of characters in both strings and calculates the number of characters to be removed to make them anagrams. 
-# It should give you the correct result.
